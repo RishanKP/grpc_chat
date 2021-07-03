@@ -68,7 +68,7 @@ func newServer() *chatServiceServer {
 
 func main() {
 	fmt.Println("--- SERVER APP ---")
-	lis, err := net.Listen("tcp", "localhost:5400")
+	lis, err := net.Listen("tcp", ":8080")
 	if err != nil {
 		log.Fatalf("Failed to listen: %v", err)
 	}
